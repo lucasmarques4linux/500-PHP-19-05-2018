@@ -44,6 +44,14 @@ Commitando a primeira vez
 git add --all
 git commit -m "Primeiro Commit"
 ```
+Adicionando repositorio remoto
+```
+git remote add origin https://github.com/lucasmarques4linux/500-PHP-19-05-2018.git
+```
+Mandando para  repositorio remoto
+```
+git push origin master
+```
 Apagando a pasta do git e recomeçando
 ```
 sudo rm -R .git/
