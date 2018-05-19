@@ -24,3 +24,28 @@ Reiniciar Servidor apache
 ```
 sudo service apache2 restart
 ```
+
+# Passo-a-passo Git
+Entrando na pasta de trabalho
+```
+cd /var/www/html/500
+```
+Configurou nosso usuário
+```
+git config --global user.name "Lucas Marques"
+git config --global user.email "lucasmarques73@hotmail.com"
+```
+Inicializou o repositório
+```
+git init
+```
+Commitando a primeira vez
+```
+git add --all
+git commit -m "Primeiro Commit"
+```
+Apagando a pasta do git e recomeçando
+```
+sudo rm -R .git/
+```
+Refiz o passo-a-passo
