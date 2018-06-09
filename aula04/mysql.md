@@ -176,4 +176,19 @@ SELECT count(*) FROM usuarios;
 ## Inserindo Post
 ```
 INSERT INTO posts(titulo,usuario_id) VALUES ('Meu primeiro post',1);
+INSERT INTO posts(titulo,usuario_id) VALUES ('Meu primeiro post',4);
+INSERT INTO posts(titulo,usuario_id) VALUES ('Meu Segundo post',1);
+INSERT INTO posts(titulo,usuario_id) VALUES ('Meu Segundo post',4);
+INSERT INTO posts(titulo,usuario_id) VALUES ('Meu Terceiro post',1);
 ```
+
+## Select com join
+```
+SELECT u.*, p.* FROM posts p INNER JOIN usuarios u ON p.usuario_id = u.id WHERE u.id = 4;
+SELECT u.nome as autor, p.titulo FROM posts p INNER JOIN usuarios u ON p.usuario_id = u.id WHERE u.id = 4;
+```
+
+## Transação
+- `BEGIN;` Inicia transação
+- `ROLLBACK;` Desfaz trasanção
+- `COMMIT;` Conclui a transação
