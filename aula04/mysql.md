@@ -55,6 +55,7 @@ CREATE TABLE posts(
 	titulo VARCHAR(255),
 	conteudo TEXT
 );
+```
 
 ## Listando Tabelas
 ```
