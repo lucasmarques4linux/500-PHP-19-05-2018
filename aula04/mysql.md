@@ -119,6 +119,7 @@ CREATE TABLE posts(
 	PRIMARY KEY (id),
 	FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
 );
+```
 
 ## Inserindo informações no banco
 
