@@ -192,3 +192,11 @@ SELECT u.nome as autor, p.titulo FROM posts p INNER JOIN usuarios u ON p.usuario
 - `BEGIN;` Inicia transação
 - `ROLLBACK;` Desfaz trasanção
 - `COMMIT;` Conclui a transação
+
+##  Truncate table
+```
+SET FOREIGN_KEY_CHECKS = 0;
+TRUNCATE posts
+TRUNCATE usuarios
+SET FOREIGN_KEY_CHECKS = 1;
+```

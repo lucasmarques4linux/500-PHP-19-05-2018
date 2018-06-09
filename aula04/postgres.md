@@ -80,3 +80,8 @@ INSERT INTO posts(titulo,usuario_id) VALUES ('Meu Segundo post',1);
 INSERT INTO posts(titulo,usuario_id) VALUES ('Meu Segundo post',2);
 INSERT INTO posts(titulo,usuario_id) VALUES ('Meu Primeiro post',5);
 ```
+
+## truncate table
+```
+truncate usuarios restart identity cascade;
+```
