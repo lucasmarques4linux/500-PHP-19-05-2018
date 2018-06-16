@@ -10,7 +10,10 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
-  <a class="navbar-brand" href="<?='/'.BASEDIR.'admin'?>">Blog</a>
+<div>
+	<a class="navbar-brand" href="<?='/'.BASEDIR.'admin'?>">Admin</a>
+  	<a class="navbar-brand" href="<?='/'.BASEDIR?>">Blog</a>	
+</div>  
 	<ul class="navbar-nav">
 	  <li class="nav-item active">
 	    <a class="nav-link" href="<?='/'.BASEDIR.'admin'?>">Home</a>
