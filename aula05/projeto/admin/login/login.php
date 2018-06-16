@@ -28,3 +28,20 @@
 </form>
 
 <?php require_once '../../layout/footer.php'; ?>
+
+<?php 
+
+require_once dirname(dirname(__DIR__)).'/include/data/login/db-login.php';
+
+if (!empty($_POST)) {
+	
+	$email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+	$pass = filter_input(INPUT_POST, 'pass');
+
+	if(verifyLogin($email,$pass)){
+		echo 'Ok';
+	} else {
+		echo 'Erro';
+	}
+
+}
