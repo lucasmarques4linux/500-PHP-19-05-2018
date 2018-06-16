@@ -5,6 +5,8 @@
 	<title>Blog</title>
 
 	<?php require_once dirname(dirname(__DIR__)).'/include/data/login/db-login.php'; ?>
+
+	<?php if(!isLogged()){ header('location:/'.BASEDIR.'admin/login/login.php');} ?>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">

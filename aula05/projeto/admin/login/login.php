@@ -39,9 +39,8 @@ if (!empty($_POST)) {
 	$pass = filter_input(INPUT_POST, 'pass');
 
 	if(verifyLogin($email,$pass)){
-		echo 'Ok';
+		header('Location:/'.BASEDIR.'admin');
 	} else {
-		echo 'Erro';
+		header('Location:/'.BASEDIR.'admin/login/login.php');
 	}
-
 }

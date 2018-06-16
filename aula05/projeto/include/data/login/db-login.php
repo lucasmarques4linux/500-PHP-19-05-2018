@@ -2,6 +2,7 @@
 
 //db-login.php
 require_once dirname(__DIR__).'/db/connection.php';
+require_once dirname(dirname(__DIR__)).'/utils/session-funcs.php';
 
 function findUser(string $user, string $pass)
 {
@@ -17,7 +18,7 @@ function verifyLogin(string $user, string $pass)
 {
 	$user = findUser($user,$pass);
 	if ($user) {
-		// Inicia Sessão
+		initSessionUser($user);
 		return true;
 	} else {
 		// Erro
