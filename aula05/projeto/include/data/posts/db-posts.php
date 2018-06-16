@@ -32,17 +32,3 @@ function findAllPost()
 	disconnect($con);
 	return $posts;
 }
-
-
-$post = [
-	'titulo' => 'Titulo do Post',
-	'conteudo' => 'Conteudo do Post', 
-	'criado_em' => date('Y-m-d H:i:s',time()), 
-	'publicado' => 'f',
-	'usuario_id' => 1
-	];
-
-insertPost($post);
-
-echo '<pre>';
-print_r(findAllPost());
