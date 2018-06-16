@@ -11,7 +11,9 @@
 		<h1>Blog</h1>
 	</div>
 	<div class="col">
+	<?php session_start(); ?>
 		<?php if (isset($_SESSION['logged']) && $_SESSION['logged']): ?>
+			<a href="admin/">Admin</a>
 			<a href="admin/login/logout.php" class="float-right">Logout</a>
 		<?php else: ?>
 			<a href="admin/login/login.php" class="float-right">Login</a>
